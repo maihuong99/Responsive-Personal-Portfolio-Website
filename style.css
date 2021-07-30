@@ -44,6 +44,13 @@ body{
     background: var(--secondary-bg-color);
 }
 
+body.dark-theme{
+    --primary-bg-color: #252C48;
+    --secondary-bg-color: #171C32;
+    --primary-text-color: #fff;
+    --secondary-text-color: #eee;
+}
+
 section{
     min-height: 100vh;
     padding: 1rem;
@@ -651,6 +658,28 @@ section{
     color: var(--main-color);
 }
 
+
+
+/* theme toggler / dark mode */
+#theme-toggler{
+    position: fixed;
+    top: 8.5rem;
+    right: 2rem;
+    z-index: 998;
+    height: 5rem;
+    width:5rem;
+    line-height:5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius:5rem;
+    text-align: center;
+}
+
+#theme-toggler.fa-sun{
+    transform: rotate(-180deg);
+}
 
 
 
